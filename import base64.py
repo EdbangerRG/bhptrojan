@@ -10,7 +10,7 @@ import time
 from datetime import datetime
 
 def github_connect():
-    with open('/home/kali/gitpass.txt') as f:
+    with open('gitpass') as f:
         token = f.read()
     user = 'EdbangerRG'
     sess = github3.login(token=token)
